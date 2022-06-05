@@ -1,1 +1,2 @@
-console.log("wena po lucho mario");
+var mensaje = "Esto se ve mas apropiado";
+console.log(mensaje);
