@@ -7,6 +7,12 @@ div {
     text-align: middle;
 }
 
+div.row {
+    background-color: white;
+    color: black;
+    height: 10%; 
+}
+
 a {
     color: darkred;
     background-color: white;
