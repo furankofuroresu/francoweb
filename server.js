@@ -1,15 +1,32 @@
-const http = require('http');
-const express = require('express');
-const path = require('path');
-const app = express();
-app.use(express.json());
-app.use(express.static("express"));
-// default URL for website
-app.use('/', function(req,res){
-    res.sendFile(path.join(__dirname+'/express/index.html'));
-    //__dirname : It will resolve to your project folder.
-  });
-const server = http.createServer(app);
+// Importing express module
+var express = require("express");
+ 
+// Importing mongoose module
+var mongoose = require("mongoose");
 const port = 3000;
-server.listen(port);
-console.debug('Server listening on port ' + port);
+const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// For serving static html files
+app.use(express.static('public'));
+
+// Starting the server on the 3000 port
+app.listen(port, () => {
+  console.log(`The application started
+  successfully on port ${port}`);
+});
+
+// default URL for website
+app.get('/', (req,res) => {
+  return res.redirect("index.html");
+  // res.sendFile(path.join(__dirname+'/express/index.html'));
+  });
+
+// Formulario de prueba
+app.get("/form01", (req, res) => {
+  return res.redirect("form.html");
+});
+
+
