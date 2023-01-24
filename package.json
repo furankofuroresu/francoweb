@@ -1,5 +1,5 @@
 {
-    "name": "francoWeb",
+    "name": "francoweb",
     "version": "1.0.0",
     "description": "",
     "scripts": {
@@ -9,6 +9,7 @@
     "dependencies": {
         "express": "^4.17.1",
         "mongoose": "6.8.4",
-        "nodemon": "2.0.20"
+        "nodemon": "2.0.20",
+        "ejs": "3.1.8"
     }
 }

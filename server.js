@@ -21,12 +21,20 @@ app.listen(port, () => {
 // default URL for website
 app.get('/', (req,res) => {
   return res.redirect("index.html");
-  // res.sendFile(path.join(__dirname+'/express/index.html'));
   });
 
 // Formulario de prueba
 app.get("/form01", (req, res) => {
   return res.redirect("form.html");
+});
+
+app.post("/enviarForm", (req, res) => {
+  let fjson = {
+    name: req.body.name,
+    sex: req.body.sex,
+    accepted: req.body.agree
+  }
+  return res.render("form01result.ejs", {form_json: fjson});
 });
 
 

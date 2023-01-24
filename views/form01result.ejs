@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resultado</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div>
+        <h2>Respuesta del formulario</h2>
+
+        <b>Hola <%= form_json.name %> como estas?!</b><br>
+        <b>Sexo: <%= form_json.sex %> </b><br>
+
+        <b>
+            <% if (form_json.accepted) { %>
+                Has aceptado las condiciones
+            <% } else { %>
+                Quiti paja chuchetu...
+            <% } %>
+        </b>
+        <b> - listo!! </b><br>
+    </div>
+</body>
+
+</html>
