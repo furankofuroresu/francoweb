@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Ingresa el juego</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <%- include('header') %> 
+
+        
+        <form action="/gameform" method="post">
+
+            <div class="formrow">
+                <div class="formlabel">
+                    Nombre del Juego:
+                </div>
+                <div class="forminput">
+                    <input type="text" name="gameName">
+                </div>
+            </div>
+                
+            <div class="formrow">
+                <div class="formlabel">
+                    Desarrollador:
+                </div>
+                <div class="forminput">
+                    <input type="text" name="gameDev">
+                </div>
+            </div>
+                
+            <div class="formrow">
+                <div class="formlabel">
+                    Categoria:
+                </div>
+                <div class="forminput">
+                    <input type="text" placeholder="agregar categoria">
+                    <textarea name="categories" id="" cols="30" rows="10" placeholder="categorias"></textarea>
+                </div>
+            </div>
+                
+            <div class="formrow">
+                <div class="formlabel">
+                    Multiplayer:
+                </div>
+                <div class="forminput">
+                    <select name="multiplayer" id="multiplayer">
+                        <option value="single">single player</option>
+                        <option value="multi">multi player</option>
+                        <option value="mmo">Online MMO</option>
+                    </select>
+                </div>
+            </div>
+                
+            <div class="formrow">
+                <button type="submit">Agregar</button>
+            </div>
+                
+            </form>
+
+            <%- include('footer') %> 
+
+    </body>
+</html>
+
