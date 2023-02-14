@@ -1,0 +1,46 @@
+.container {
+    background-image: url("/img/Groudon.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    align-items: center;
+}
+
+.login-form {
+    background-color: rgb(255, 255, 255, 0.85);
+    padding: 0.2em;
+    font-size: 1.2em;
+    width: 15em;
+    height: 8em;
+    padding-top: 3em;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.2em;
+    justify-content: center;
+
+}
+
+input[type="text"],
+[type="password"] {
+    padding: 0em;
+    font-size: 1.5em;
+    border-radius: 0.2em;
+    width: 6.5em;
+}
+
+button {
+    width: 95%;
+    background-color: red;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0.6em;
+}
+
+label {
+    flex-basis: 5em;
+}

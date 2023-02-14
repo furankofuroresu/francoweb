@@ -31,12 +31,15 @@ app.post("/gameform", (req, res) => {
   return res.render("gameform.ejs", {game: game});
 });
 
+app.get("/login", (req, res) => {
+return res.render("login.ejs")
+});
 
 
 // default URL for website
 app.get('/', (req,res) => {
   return res.redirect("index.html");
-  });
+  })
 
 // Formulario de prueba
 app.get("/form01", (req, res) => {
