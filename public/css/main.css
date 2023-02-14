@@ -40,5 +40,6 @@ a {
 a:hover {
     color: white;
     background-color: red;
+    background-color: darkred;
     padding: 20px;
 }
